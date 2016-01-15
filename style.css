@@ -1,0 +1,6 @@
+#button1{
+    text-align:center;
+}
+#button1:active{
+    padding-left:200px;
+}
