@@ -1,6 +1,8 @@
-#button1{
+#text1{
     text-align:center;
+    transition:opacity 5s;
+    
 }
-#button1:active{
-    padding-left:200px;
+#text1:hover{
+    opacity:0;
 }
