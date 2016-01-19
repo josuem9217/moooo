@@ -1,8 +1,21 @@
 #text1{
-    text-align:center;
+    margin:auto;
     transition:opacity 1s;
     
 }
-#text1:hover{
-    opacity:0;
+.tran1{
+    height:500px;
+}
+
+#cow{
+    margin: 250px 950px 950px;
+}
+.box {
+
+	transition:opacity 2s ease;
+}
+
+.box-change {
+	
+	opacity:0;
 }
