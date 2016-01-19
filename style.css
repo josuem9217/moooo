@@ -10,3 +10,10 @@
 #cow{
     margin: 250px 950px 950px;
 }
+
+html{
+    height: 100%;
+    background: radial-gradient(#E6EDF0,#EEE6F0,#F0E9E6);
+    border-style: inset;
+}
+
