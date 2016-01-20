@@ -11,13 +11,46 @@
     margin: 250px 950px 950px;
 }
 .box {
-
-	transition:opacity 2s ease;
-}
-
-.box-change {
+	transition: transform 2s ease-out;
 	
-	right:200px;
+}
+.box2 {
+    opacity:0;
+	transition: transform 2s ease-out;
+	transition: opacity .5s ease-out;
+}
+.box3 {
+    opacity:0;
+	transition: transform 2s ease-out;
+	transition: opacity .5s ease-out;
+}
+.box4 {
+    opacity:0;
+	transition: transform 2s ease-out;
+	transition: opacity 3s ease-out;
+}
+.box-change {
+	transform: translate(2000px);
+	transition:all 2s;
+}
+.box-change2 {
+    opacity:1;
+	transform: translate(2000px);
+	transition:all 2s;
+}
+.box-change3 {
+    opacity:1;
+	transform: translate(2000px);
+	transition:all 2s;
+}
+.box-change4 {
+    opacity:1;
+	transform: translate(2000px);
+	transition:all 2s;
+}
+input{
+    width: 2em;
+    font-size:5em;
 }
 
 
