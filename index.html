@@ -5,7 +5,24 @@
   <script>
     function trans() {
 
-      document.getElementById("text1").className = "box-change";
+      document.getElementById("box").className = "box-change";
+      document.getElementById("box2").style.opacity = "1";
+    }
+
+    function trans2() {
+      document.getElementById("box2").className = "box-change2";
+      document.getElementById("box3").style.opacity = "1";
+    }
+
+    function trans3() {
+      document.getElementById("box3").className = "box-change3";
+      document.getElementById("box4").style.opacity = "1";
+      document.getElementById("cowpic").className = "bigCow";
+    }
+
+    function trans4() {
+      document.getElementById("box4").className = "box-change4";
+
     }
   </script>
   <meta charset="UTF-8">
@@ -16,16 +33,31 @@
 
 <body>
 
+
+  <div class="box" id="box">
+    <input type="button" id="text1" value="Knock Knock" onclick="trans()">
+  </div>
+  <div class="box2" id="box2">
+    <input type="button" id="text2" value="Who's There" onclick="trans2()">
+  </div>
+  <div class="box3" id="box3">
+    <input type="button" id="text3" value="Interrupting cow" onclick="trans3()">
+  </div>
+  <div class="box4" id="box4">
+    <input type="button" id="text4" value="Interrupting Cow who?" onclick="trans4()">
+  </div>
+
   
-  <input class="box" type="button" id="text1" value="Knock Knock" onclick="trans()">
+
+
   <div>
     <h1>CLICK HERE</h1>
   </div>
-  <div id="cow">
-    <img src="cow.png" height="10" width="10">
+  <div class="cow">
+
+    <img id="cowpic" src="cow.png">
   </div>
 
 </body>
 
 </html>
-<!-- onmouseover="setTimeout(function(){document.getElementById('text1').style.visibility='hidden';},1000); "-->
