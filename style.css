@@ -1,15 +1,22 @@
-#text1{
-    margin:auto;
-    transition:opacity 1s;
-    
-}
-.tran1{
-    height:500px;
+#text1 {
+    margin: auto;
+    transition: opacity 1s;
 }
 
-#cow{
-    margin: 250px 950px 950px;
+.tran1 {
+    height: 500px;
 }
+
+.cow {
+    margin: 350px 950px 750px;
+    height:10px;
+    width:10px;
+}
+img{
+    height:10px;
+}
+
+
 .box {
 	transition: transform 2s ease-out;
 	
@@ -28,8 +35,10 @@
     opacity:0;
 	transition: transform 2s ease-out;
 	transition: opacity 3s ease-out;
+
 }
 .box-change {
+
 	transform: translate(2000px);
 	transition:all 2s;
 }
@@ -51,13 +60,47 @@
 input{
     width: 2em;
     font-size:5em;
+
 }
 
-
-html{
+html {
     height: 100%;
-    background: radial-gradient(#E6EDF0,#EEE6F0,#F0E9E6);
-    border-style: inset;
+    background: radial-gradient(#E6EDF0, #EEE6F0, #F0E9E6);
 }
 
+h1 {
+    margin: auto;
+    width: 11%;
+    height: 80%;
+    position: relative;
+    animation-name: attention;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
 
+@keyframes attention {
+    0% {
+        left: 0px;
+    }
+    25% {
+        left: 200px;
+    }
+    50% {
+        left: 0px;
+    }
+
+    75% {
+        right: 0px;
+    }
+    100% {
+        right: 200px;
+    }
+    125% {
+        right: 0px;
+    }
+}
+.bigCow{
+    margin:0px;
+    height:3500px;
+    border:2px solid red;
+}

@@ -4,6 +4,7 @@
 <head>
   <script>
     function trans() {
+
       document.getElementById("box").className = "box-change";
       document.getElementById("box2").style.opacity = "1";
     }
@@ -16,10 +17,12 @@
     function trans3() {
       document.getElementById("box3").className = "box-change3";
       document.getElementById("box4").style.opacity = "1";
+      document.getElementById("cowpic").className = "bigCow";
     }
 
     function trans4() {
       document.getElementById("box4").className = "box-change4";
+
     }
   </script>
   <meta charset="UTF-8">
@@ -28,6 +31,7 @@
 </head>
 
 <body>
+
 
   <div class="box" id="box">
     <input type="button" id="text1" value="Knock Knock" onclick="trans()">
@@ -42,9 +46,15 @@
     <input type="button" id="text4" value="Interrupting Cow who?" onclick="trans4()">
   </div>
 
-  <div id="cow">
+  
 
-    <img src="cow.png" height="10" width="10">
+
+  <div>
+    <h1>CLICK HERE</h1>
+  </div>
+  <div class="cow">
+
+    <img id="cowpic" src="cow.png">
   </div>
 
 </body>
