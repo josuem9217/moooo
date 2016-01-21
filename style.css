@@ -32,6 +32,8 @@ h1 {
     animation-name: attention;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+font-family: 'Cantarell', sans-serif;
+    
 }
 
 @keyframes attention {
