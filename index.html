@@ -6,7 +6,9 @@
     function trans() {
 
       document.getElementById("box").className = "box-change";
+      // gives the button a class with the new properties to make it move
       document.getElementById("box2").style.opacity = "1";
+      //makes the next box appear
     }
 
     function trans2() {
@@ -18,6 +20,10 @@
       document.getElementById("box3").className = "box-change3";
       document.getElementById("box4").style.opacity = "1";
       document.getElementById("cowpic").className = "bigCow";
+      //gives the picture of the cow a class with the new properties to make it bigger
+      var audio = document.getElementById("audio");
+      audio.play(15);
+      
     }
 
     function trans4() {
@@ -52,11 +58,11 @@
   <div>
     <h1>CLICK HERE</h1>
   </div>
-  <div class="cow">
 
-    <img id="cowpic" src="cow.png">
-  </div>
 
+    <img id="cowpic" class="cowpic" src="cow.png">
+  
+<audio src="cow.mp3" id="audio"></audio>
 </body>
 
 </html>
