@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 #text1 {
     margin: auto;
     transition: opacity 1s;
@@ -7,15 +11,20 @@
     height: 500px;
 }
 
-.cow {
+.cowpic {
     margin: 350px 950px 750px;
     height:10px;
     width:10px;
+    transition:all 2s ease-in;
 }
-img{
-    height:10px;
+.bigCow{
+    transition:all .5s ease-out;
+    transition-delay: .3s;
+    margin-left:25px;
+    width:85%;
+    margin-top:-250px;
+    
 }
-
 
 .box {
 	transition: transform 2s ease-out;
@@ -35,7 +44,7 @@ img{
     opacity:0;
 	transition: transform 2s ease-out;
 	transition: opacity 3s ease-out;
-
+ 
 }
 .box-change {
 
@@ -56,10 +65,11 @@ img{
     opacity:1;
 	transform: translate(2000px);
 	transition:all 2s;
+	
 }
 input{
-    width: 2em;
-    font-size:5em;
+    width: 200px;
+    font-size:17px;
 
 }
 
@@ -69,6 +79,7 @@ html {
 }
 
 h1 {
+    z-index:-1;
     margin: auto;
     width: 11%;
     height: 80%;
@@ -77,9 +88,11 @@ h1 {
     animation-duration: 2s;
     animation-iteration-count: infinite;
     font-family: 'Cantarell', sans-serif;
-     border-image-source: url(cowborder.jpg);
+    border-image-source: url(cowborder.jpg);
     border-image-repeat: repeat;
-    border-image-slice: 10000;
+    border-image-slice: 100;  
+    box-shadow: 10px 10px 5px #888888;
+
    
 
    
@@ -105,9 +118,4 @@ h1 {
      125% {
          right: 0px;
      }
- }
- .bigCow{
-     margin:0px;
-     height:3500px;
-     border:2px solid red;
  }

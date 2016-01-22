@@ -6,7 +6,9 @@
     function trans() {
 
       document.getElementById("box").className = "box-change";
+      // gives the button a class with the new properties to make it move
       document.getElementById("box2").style.opacity = "1";
+      //makes the next box appear
     }
 
     function trans2() {
@@ -18,6 +20,10 @@
       document.getElementById("box3").className = "box-change3";
       document.getElementById("box4").style.opacity = "1";
       document.getElementById("cowpic").className = "bigCow";
+      //gives the picture of the cow a class with the new properties to make it bigger
+      var audio = document.getElementById("audio");
+      audio.play(15);
+      
     }
 
     function trans4() {
@@ -32,10 +38,13 @@
 </head>
 
 <body>
-
+ <div>
+    <h1>CLICK THE BUTTONS</h1>
+  </div>
 
   <div class="box" id="box">
     <input type="button" id="text1" value="Knock Knock" onclick="trans()">
+    <!--checks if box 1 is clicked so next box can appear and box 1 transition out-->
   </div>
   <div class="box2" id="box2">
     <input type="button" id="text2" value="Who's There" onclick="trans2()">
@@ -46,18 +55,9 @@
   <div class="box4" id="box4">
     <input type="button" id="text4" value="Interrupting Cow who?" onclick="trans4()">
   </div>
-
+    <img id="cowpic" class="cowpic" src="cow.png">
   
-
-
-  <div>
-    <h1>CLICK BUTTON</h1>
-  </div>
-  <div class="cow">
-
-    <img id="cowpic" src="cow.png">
-  </div>
-
+<audio src="cow.mp3" id="audio"></audio>
 </body>
 
 </html>
