@@ -76,6 +76,38 @@ h1 {
     animation-name: attention;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-font-family: 'Cantarell', sans-serif;
+    font-family: 'Cantarell', sans-serif;
+     border-image-source: url(cowborder.jpg);
+    border-image-repeat: repeat;
+    border-image-slice: 10000;
+   
+
+   
     
 }
+@keyframes attention {
+    0% {
+      left: 0px;
+    }
+    25% {
+        left: 200px;
+     }
+     50% {
+         left: 0px;
+     }
+  
+     75% {
+         right: 0px;
+     }
+     100% {
+         right: 200px;
+     }
+     125% {
+         right: 0px;
+     }
+ }
+ .bigCow{
+     margin:0px;
+     height:3500px;
+     border:2px solid red;
+ }
