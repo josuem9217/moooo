@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 #text1 {
     margin: auto;
     transition: opacity 1s;
@@ -17,9 +21,13 @@
     transition:all .5s ease-out;
     transition-delay: .3s;
     margin-left:25px;
-    height:1500px;
+    width:85%;
+    margin-top:-250px;
+    
 }
-
+h1{
+    z-index:-1;
+}
 
 .box {
 	transition: transform 2s ease-out;
@@ -39,7 +47,7 @@
     opacity:0;
 	transition: transform 2s ease-out;
 	transition: opacity 3s ease-out;
-
+ 
 }
 .box-change {
 
@@ -60,10 +68,11 @@
     opacity:1;
 	transform: translate(2000px);
 	transition:all 2s;
+	
 }
 input{
     width: 200px;
-    font-size:25px;
+    font-size:17px;
 
 }
 
@@ -80,6 +89,7 @@ h1 {
     animation-name: attention;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+
 }
 
 @keyframes attention {
@@ -103,4 +113,5 @@ h1 {
         right: 0px;
     }
 }
+
 
